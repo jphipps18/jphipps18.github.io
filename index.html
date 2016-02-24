@@ -170,7 +170,7 @@ google.maps.event.addListener(layer, 'click', function (e) {
     '<li><a href="#tab-3"><span>Charity</span></a></li>' + //tabs names
     '</ul>' +
     '<div id="tab-1">' + //second tab content
-    '<p><a href="' + e.row['Rest. Website'].value +'" target="_blank">' + e.row['Restaurant'].value + '</a></p>' +
+    + e.row['Month'].value + '<p><a href="' + e.row['Rest. Website'].value +'" target="_blank">' + e.row['Restaurant'].value + '</a></p>' +
     '<p>' + e.row['Address'].value + '</b></p>' +
     '<img width="100px" height="100px" src="' + e.row['Restaurant Logo'].value + '"><\/img></a>' +
      '</div>' +
