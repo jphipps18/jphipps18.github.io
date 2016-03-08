@@ -130,11 +130,6 @@ var layer;
 var tableid = '1ASZzkzPNy91QzP8mNiqqLuC9WEnDag6K-UYsFIPf';
 var zoom = 12;
 var latlngbounds = new google.maps.LatLngBounds();
-latlon.each(function(n) {
-	latlongbounds.extend(n);
-});
-map.setCenter(latlonbounds.getCenter());
-map.fitBounds(latlngbounds);
 function initialize() {
 map = new google.maps.Map(document.getElementById('map_canvas'), {						
 center: latlng,
